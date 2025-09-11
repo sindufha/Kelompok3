@@ -69,8 +69,7 @@ public class FrameFia extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("https://github.com/sindufha/Kelompok3.git");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\sitil\\Downloads\\Gambar WhatsApp 2025-09-11 pukul 18.23.25_4af312d1 (2).jpg")); // NOI18N
-        jLabel10.setText("jLabel10");
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kelompok_3/foto.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

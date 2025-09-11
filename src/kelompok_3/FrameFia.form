@@ -193,9 +193,8 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\sitil\Downloads\Gambar WhatsApp 2025-09-11 pukul 18.23.25_4af312d1 (2).jpg"/>
+              <Image iconType="3" name="/kelompok_3/foto.jpg"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel10"/>
           </Properties>
         </Component>
       </SubComponents>
