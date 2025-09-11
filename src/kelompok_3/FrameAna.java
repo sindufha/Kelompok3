@@ -51,7 +51,7 @@ public class FrameAna extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel4.setText("Prodi             :   Sistem Informasi");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\siti novi triana\\OneDrive\\Pictures\\Saved Pictures\\Ana fto.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kelompok_3/Ana fto.png"))); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jLabel6.setText("Alamat          :  Tanjunganom");
