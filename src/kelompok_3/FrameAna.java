@@ -45,15 +45,15 @@ public class FrameAna extends javax.swing.JFrame {
         jLabel2.setText("NIM               :  202457201064");
 
         jLabel3.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel3.setText("Kelompok    :  3(Tiga)");
+        jLabel3.setText("Kelompok     :  3 (Tiga)");
 
         jLabel4.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel4.setText("Prodi             :  Sistem Informasi");
+        jLabel4.setText("Prodi             :   Sistem Informasi");
 
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\siti novi triana\\OneDrive\\Pictures\\Saved Pictures\\Ana fto.png")); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel6.setText("Alamat             :  Tanjunganom");
+        jLabel6.setText("Alamat          :  Tanjunganom");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -67,7 +67,7 @@ public class FrameAna extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel1)
                     .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
