@@ -15,7 +15,6 @@ public class SindhuFrame extends javax.swing.JFrame {
      */
     public SindhuFrame() {
         initComponents();
-        debugImageLocation();
         foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kelompok_3/Sindhu.jpg")));
         System.out.println(getClass().getResource("/kelompok_3/Sindhu.jpg"));
     }
@@ -107,46 +106,7 @@ public class SindhuFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private void debugImageLocation() {
-    // Debug 1: Print class location
-    System.out.println("Class location: " + getClass().getProtectionDomain().getCodeSource().getLocation());
-    System.out.println("Class name: " + getClass().getName());
-    System.out.println("Package: " + getClass().getPackage().getName());
-    
-    // Debug 2: List semua resources di package
-    try {
-        java.net.URL packageURL = getClass().getResource("");
-        if (packageURL != null) {
-            System.out.println("Package URL: " + packageURL);
-            
-            // List files di package (kalau bisa)
-            java.io.File packageDir = new java.io.File(packageURL.toURI());
-            if (packageDir.exists() && packageDir.isDirectory()) {
-                System.out.println("Files in package:");
-                for (String file : packageDir.list()) {
-                    System.out.println("  - " + file);
-                }
-            }
-        }
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-    
-    // Debug 3: Test berbagai path
-    String[] paths = {
-        "sindhu.jpg",
-        "Sindhu.jpg", 
-        "/kelompok_3/sindhu.jpg",
-        "/kelompok_3/Sindhu.jpg",
-        "kelompok_3/sindhu.jpg",
-        "../sindhu.jpg"
-    };
-    
-    for (String path : paths) {
-        java.net.URL url = getClass().getResource(path);
-        System.out.println("Testing path '" + path + "': " + (url != null ? "FOUND - " + url : "NOT FOUND"));
-    }
-}
+
     /**
      * @param args the command line arguments
      */
