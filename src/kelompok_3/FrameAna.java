@@ -57,7 +57,7 @@ public class FrameAna extends javax.swing.JFrame {
         jLabel6.setText("Alamat          :  Tanjunganom");
 
         jLabel7.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel7.setText("Link Github  :  https://github.com/sindufha/Kelompok3/tree/Ana");
+        jLabel7.setText("Link Github  :  https://github.com/stnvtriana");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -96,7 +96,7 @@ public class FrameAna extends javax.swing.JFrame {
                         .addComponent(jLabel6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
