@@ -354,23 +354,7 @@ private Point mouseDownCompCoords = null;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-            rightPanel.removeAll();
     
-    // Create JFrame tapi jangan show
-    CharisFrame charisFrame = new CharisFrame();
-    
-    // Get root panel dari JFrame
-    JPanel charisContent = (JPanel) charisFrame.getContentPane();
-    
-    // Copy ke right panel
-    rightPanel.setLayout(new BorderLayout());
-    rightPanel.add(charisContent, BorderLayout.CENTER);
-    
-    // Refresh
-    rightPanel.revalidate();
-    rightPanel.repaint();
-        
     }//GEN-LAST:event_jButton3ActionPerformed
 private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     // Clear target panel
