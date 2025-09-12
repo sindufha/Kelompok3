@@ -56,10 +56,10 @@ private Point mouseDownCompCoords = null;
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        TopBar = new javax.swing.JPanel();
+        Kelompok3 = new javax.swing.JLabel();
+        btnClose = new javax.swing.JButton();
+        ListAnggota = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -67,68 +67,65 @@ private Point mouseDownCompCoords = null;
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        rightPanel = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        rightPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Kelompok 3");
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(60, 63, 65));
-        jPanel1.setPreferredSize(new java.awt.Dimension(400, 40));
-        jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        TopBar.setBackground(new java.awt.Color(60, 63, 65));
+        TopBar.setPreferredSize(new java.awt.Dimension(400, 40));
+        TopBar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
-                jPanel1MouseDragged(evt);
+                TopBarMouseDragged(evt);
             }
         });
-        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        TopBar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jPanel1MousePressed(evt);
+                TopBarMousePressed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Kelompok 3");
-        jLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
+        Kelompok3.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        Kelompok3.setForeground(new java.awt.Color(255, 255, 255));
+        Kelompok3.setText("Kelompok 3");
+        Kelompok3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 1, 1));
 
-        jButton1.setBackground(new java.awt.Color(60, 63, 65));
-        jButton1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("×");
-        jButton1.setBorder(null);
-        jButton1.setFocusPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnClose.setBackground(new java.awt.Color(60, 63, 65));
+        btnClose.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btnClose.setForeground(new java.awt.Color(255, 255, 255));
+        btnClose.setText("×");
+        btnClose.setBorder(null);
+        btnClose.setFocusPainted(false);
+        btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCloseActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout TopBarLayout = new javax.swing.GroupLayout(TopBar);
+        TopBar.setLayout(TopBarLayout);
+        TopBarLayout.setHorizontalGroup(
+            TopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TopBarLayout.createSequentialGroup()
+                .addComponent(Kelompok3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 602, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnClose)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(jButton1))
+        TopBarLayout.setVerticalGroup(
+            TopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(Kelompok3, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addComponent(btnClose))
         );
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
-
-        jPanel2.setBackground(new java.awt.Color(78, 82, 84));
-        jPanel2.setMinimumSize(new java.awt.Dimension(280, 100));
-        jPanel2.setPreferredSize(new java.awt.Dimension(280, 1));
-        jPanel2.setLayout(new java.awt.GridBagLayout());
+        ListAnggota.setBackground(new java.awt.Color(78, 82, 84));
+        ListAnggota.setMinimumSize(new java.awt.Dimension(280, 100));
+        ListAnggota.setPreferredSize(new java.awt.Dimension(280, 1));
+        ListAnggota.setLayout(new java.awt.GridBagLayout());
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -140,7 +137,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 55, 0, 0);
-        jPanel2.add(jLabel2, gridBagConstraints);
+        ListAnggota.add(jLabel2, gridBagConstraints);
 
         jButton2.setBackground(new java.awt.Color(90, 93, 95));
         jButton2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -162,7 +159,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton2, gridBagConstraints);
+        ListAnggota.add(jButton2, gridBagConstraints);
 
         jButton3.setBackground(new java.awt.Color(90, 93, 95));
         jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -184,7 +181,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton3, gridBagConstraints);
+        ListAnggota.add(jButton3, gridBagConstraints);
 
         jButton4.setBackground(new java.awt.Color(90, 93, 95));
         jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -201,7 +198,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton4, gridBagConstraints);
+        ListAnggota.add(jButton4, gridBagConstraints);
 
         jButton5.setBackground(new java.awt.Color(90, 93, 95));
         jButton5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -218,7 +215,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton5, gridBagConstraints);
+        ListAnggota.add(jButton5, gridBagConstraints);
 
         jButton6.setBackground(new java.awt.Color(90, 93, 95));
         jButton6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -240,7 +237,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton6, gridBagConstraints);
+        ListAnggota.add(jButton6, gridBagConstraints);
 
         jButton7.setBackground(new java.awt.Color(90, 93, 95));
         jButton7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -262,40 +259,49 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        jPanel2.add(jButton7, gridBagConstraints);
+        ListAnggota.add(jButton7, gridBagConstraints);
 
-        getContentPane().add(jPanel2, java.awt.BorderLayout.LINE_START);
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
+        jPanel1.setPreferredSize(new java.awt.Dimension(519, 100));
+        jPanel1.setRequestFocusEnabled(false);
+        jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jPanel3.setBackground(new java.awt.Color(43, 43, 43));
-        jPanel3.setLayout(new java.awt.CardLayout());
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Identitas Anggota Kelompok");
+        jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 1, 20, 1));
+        jPanel1.add(jLabel3, java.awt.BorderLayout.CENTER);
 
-        jPanel4.setBackground(new java.awt.Color(245, 245, 245));
-        jPanel4.setLayout(new java.awt.CardLayout());
+        rightPanel.setBackground(new java.awt.Color(102, 102, 102));
+        rightPanel.setLayout(new java.awt.CardLayout());
 
-        rightPanel.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
-        rightPanel.setForeground(new java.awt.Color(0, 51, 51));
-        rightPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        rightPanel.setText("Pilih Anggota kelompok untuk melihat detail");
-        jPanel4.add(rightPanel, "card2");
-
-        jPanel5.setBackground(new java.awt.Color(43, 43, 43));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 519, Short.MAX_VALUE)
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ListAnggota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(rightPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(TopBar, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 399, Short.MAX_VALUE)
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(TopBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ListAnggota, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(rightPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-
-        jPanel4.add(jPanel5, "card3");
-
-        jPanel3.add(jPanel4, "card2");
-
-        getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
 
         pack();
         setLocationRelativeTo(null);
@@ -309,23 +315,23 @@ private Point mouseDownCompCoords = null;
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         // TODO add your handling code here:
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCloseActionPerformed
 
-    private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
+    private void TopBarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TopBarMousePressed
         // TODO add your handling code here:
         mouseDownCompCoords = evt.getPoint();
-    }//GEN-LAST:event_jPanel1MousePressed
+    }//GEN-LAST:event_TopBarMousePressed
 
-    private void jPanel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseDragged
+    private void TopBarMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TopBarMouseDragged
         // TODO add your handling code here:
         Point currCoords = evt.getLocationOnScreen();
     this.setLocation(
         currCoords.x - mouseDownCompCoords.x, 
         currCoords.y - mouseDownCompCoords.y);
-    }//GEN-LAST:event_jPanel1MouseDragged
+    }//GEN-LAST:event_TopBarMouseDragged
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         rightPanel.removeAll();
@@ -347,6 +353,22 @@ private Point mouseDownCompCoords = null;
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+            rightPanel.removeAll();
+    
+    // Create JFrame tapi jangan show
+    CharisFrame charisFrame = new CharisFrame();
+    
+    // Get root panel dari JFrame
+    JPanel charisContent = (JPanel) charisFrame.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(charisContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     // Clear target panel
@@ -403,20 +425,19 @@ private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel Kelompok3;
+    private javax.swing.JPanel ListAnggota;
+    private javax.swing.JPanel TopBar;
+    private javax.swing.JButton btnClose;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JLabel rightPanel;
+    private javax.swing.JPanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }
