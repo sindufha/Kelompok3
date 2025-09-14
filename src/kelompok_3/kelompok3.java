@@ -67,7 +67,7 @@ private Point mouseDownCompCoords = null;
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        TitleIdentitas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         rightPanel = new javax.swing.JPanel();
 
@@ -191,6 +191,11 @@ private Point mouseDownCompCoords = null;
         jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setPreferredSize(new java.awt.Dimension(240, 45));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -262,10 +267,10 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
         ListAnggota.add(jButton7, gridBagConstraints);
 
-        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
-        jPanel1.setPreferredSize(new java.awt.Dimension(519, 100));
-        jPanel1.setRequestFocusEnabled(false);
-        jPanel1.setLayout(new java.awt.BorderLayout());
+        TitleIdentitas.setBackground(new java.awt.Color(0, 51, 51));
+        TitleIdentitas.setPreferredSize(new java.awt.Dimension(519, 100));
+        TitleIdentitas.setRequestFocusEnabled(false);
+        TitleIdentitas.setLayout(new java.awt.BorderLayout());
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -273,7 +278,7 @@ private Point mouseDownCompCoords = null;
         jLabel3.setText("Identitas Anggota Kelompok");
         jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 1, 20, 1));
         jLabel3.setPreferredSize(new java.awt.Dimension(252, 30));
-        jPanel1.add(jLabel3, java.awt.BorderLayout.CENTER);
+        TitleIdentitas.add(jLabel3, java.awt.BorderLayout.CENTER);
 
         rightPanel.setBackground(new java.awt.Color(102, 102, 102));
         rightPanel.setLayout(new java.awt.CardLayout());
@@ -288,7 +293,7 @@ private Point mouseDownCompCoords = null;
                         .addComponent(ListAnggota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(rightPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(TitleIdentitas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(TopBar, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -299,7 +304,7 @@ private Point mouseDownCompCoords = null;
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TitleIdentitas, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(rightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(ListAnggota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -354,8 +359,40 @@ private Point mouseDownCompCoords = null;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    rightPanel.removeAll();
     
+    // Create JFrame tapi jangan show
+    CharisFrame charisFrame = new CharisFrame();
+    
+    // Get root panel dari JFrame
+    JPanel charisContent = (JPanel) charisFrame.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(charisContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+     rightPanel.removeAll();
+    
+    // Create JFrame tapi jangan show
+    Fadli fadliFrame = new Fadli();
+    
+    // Get root panel dari JFrame
+    JPanel fadliContent = (JPanel) fadliFrame.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(fadliContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
+    }//GEN-LAST:event_jButton4ActionPerformed
 private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     // Clear target panel
     targetPanel.removeAll();
@@ -413,6 +450,7 @@ private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Kelompok3;
     private javax.swing.JPanel ListAnggota;
+    private javax.swing.JPanel TitleIdentitas;
     private javax.swing.JPanel TopBar;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton jButton2;
@@ -423,7 +461,6 @@ private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }
