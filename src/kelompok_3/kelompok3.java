@@ -213,6 +213,11 @@ private Point mouseDownCompCoords = null;
         jButton5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.setPreferredSize(new java.awt.Dimension(240, 45));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -393,6 +398,25 @@ private Point mouseDownCompCoords = null;
     rightPanel.revalidate();
     rightPanel.repaint();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+     rightPanel.removeAll();
+    
+    // Create JFrame tapi jangan show
+    Fadli fadliFrame = new Fadli();
+    
+    // Get root panel dari JFrame
+    JPanel fadliContent = (JPanel) fadliFrame.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(fadliContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
 private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     // Clear target panel
     targetPanel.removeAll();
