@@ -24,27 +24,7 @@ public class kelompok3 extends javax.swing.JFrame {
     public kelompok3() {
         initComponents();
     }
-    private void showFrameInPanel(JFrame frame, JPanel targetPanel) {
-    // Clear panel target
-    targetPanel.removeAll();
-    
-    // Get content dari JFrame
-    Container frameContent = frame.getContentPane();
-    
-    // Remove content dari JFrame
-    frame.remove(frameContent);
-    
-    // Add content ke target panel
-    targetPanel.setLayout(new BorderLayout());
-    targetPanel.add(frameContent, BorderLayout.CENTER);
-    
-    // Refresh panel
-    targetPanel.revalidate();
-    targetPanel.repaint();
-    
-    // Hide JFrame (karena content sudah dipindah)
-    frame.setVisible(false);
-}
+ 
 private Point mouseDownCompCoords = null;
     /**
      * This method is called from within the constructor to initialize the form.
@@ -61,12 +41,12 @@ private Point mouseDownCompCoords = null;
         btnClose = new javax.swing.JButton();
         ListAnggota = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        buttonSindhu = new javax.swing.JButton();
+        btnCharis = new javax.swing.JButton();
+        btnFadli = new javax.swing.JButton();
+        btnAhmad = new javax.swing.JButton();
+        btnFia = new javax.swing.JButton();
+        btnAna = new javax.swing.JButton();
         TitleIdentitas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         rightPanel = new javax.swing.JPanel();
@@ -140,16 +120,16 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.insets = new java.awt.Insets(0, 55, 0, 0);
         ListAnggota.add(jLabel2, gridBagConstraints);
 
-        jButton2.setBackground(new java.awt.Color(90, 93, 95));
-        jButton2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Sindhu");
-        jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonSindhu.setBackground(new java.awt.Color(90, 93, 95));
+        buttonSindhu.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        buttonSindhu.setForeground(new java.awt.Color(255, 255, 255));
+        buttonSindhu.setText("Sindhu");
+        buttonSindhu.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        buttonSindhu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        buttonSindhu.setPreferredSize(new java.awt.Dimension(240, 45));
+        buttonSindhu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                buttonSindhuActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -160,18 +140,18 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton2, gridBagConstraints);
+        ListAnggota.add(buttonSindhu, gridBagConstraints);
 
-        jButton3.setBackground(new java.awt.Color(90, 93, 95));
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Charis");
-        jButton3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnCharis.setBackground(new java.awt.Color(90, 93, 95));
+        btnCharis.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnCharis.setForeground(new java.awt.Color(255, 255, 255));
+        btnCharis.setText("Charis");
+        btnCharis.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnCharis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCharis.setPreferredSize(new java.awt.Dimension(240, 45));
+        btnCharis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnCharisActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -182,18 +162,18 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton3, gridBagConstraints);
+        ListAnggota.add(btnCharis, gridBagConstraints);
 
-        jButton4.setBackground(new java.awt.Color(90, 93, 95));
-        jButton4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Fadli");
-        jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnFadli.setBackground(new java.awt.Color(90, 93, 95));
+        btnFadli.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnFadli.setForeground(new java.awt.Color(255, 255, 255));
+        btnFadli.setText("Fadli");
+        btnFadli.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnFadli.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFadli.setPreferredSize(new java.awt.Dimension(240, 45));
+        btnFadli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnFadliActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -204,18 +184,18 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton4, gridBagConstraints);
+        ListAnggota.add(btnFadli, gridBagConstraints);
 
-        jButton5.setBackground(new java.awt.Color(90, 93, 95));
-        jButton5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Ahmad");
-        jButton5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnAhmad.setBackground(new java.awt.Color(90, 93, 95));
+        btnAhmad.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnAhmad.setForeground(new java.awt.Color(255, 255, 255));
+        btnAhmad.setText("Ahmad");
+        btnAhmad.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnAhmad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAhmad.setPreferredSize(new java.awt.Dimension(240, 45));
+        btnAhmad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnAhmadActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -226,18 +206,18 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton5, gridBagConstraints);
+        ListAnggota.add(btnAhmad, gridBagConstraints);
 
-        jButton6.setBackground(new java.awt.Color(90, 93, 95));
-        jButton6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Fia");
-        jButton6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnFia.setBackground(new java.awt.Color(90, 93, 95));
+        btnFia.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnFia.setForeground(new java.awt.Color(255, 255, 255));
+        btnFia.setText("Fia");
+        btnFia.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnFia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFia.setPreferredSize(new java.awt.Dimension(240, 45));
+        btnFia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnFiaActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -248,18 +228,18 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton6, gridBagConstraints);
+        ListAnggota.add(btnFia, gridBagConstraints);
 
-        jButton7.setBackground(new java.awt.Color(90, 93, 95));
-        jButton7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Ana");
-        jButton7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.setPreferredSize(new java.awt.Dimension(240, 45));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnAna.setBackground(new java.awt.Color(90, 93, 95));
+        btnAna.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnAna.setForeground(new java.awt.Color(255, 255, 255));
+        btnAna.setText("Ana");
+        btnAna.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnAna.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAna.setPreferredSize(new java.awt.Dimension(240, 45));
+        btnAna.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnAnaActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -270,7 +250,7 @@ private Point mouseDownCompCoords = null;
         gridBagConstraints.ipady = 24;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        ListAnggota.add(jButton7, gridBagConstraints);
+        ListAnggota.add(btnAna, gridBagConstraints);
 
         TitleIdentitas.setBackground(new java.awt.Color(0, 51, 51));
         TitleIdentitas.setPreferredSize(new java.awt.Dimension(519, 100));
@@ -319,19 +299,47 @@ private Point mouseDownCompCoords = null;
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void btnFiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiaActionPerformed
+    rightPanel.removeAll();
+    
+    // Create JFrame tapi jangan show
+    FrameFia frameFia = new FrameFia();
+    
+    // Get root panel dari JFrame
+    JPanel fiaContent = (JPanel) frameFia.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(fiaContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
+    }//GEN-LAST:event_btnFiaActionPerformed
+    
+    private void btnAnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnaActionPerformed
+         rightPanel.removeAll();
+    
+    // Create JFrame tapi jangan show
+    FrameAna frrameAna = new FrameAna();
+    
+    // Get root panel dari JFrame
+    JPanel anaContent = (JPanel) frrameAna.getContentPane();
+    
+    // Copy ke right panel
+    rightPanel.setLayout(new BorderLayout());
+    rightPanel.add(anaContent, BorderLayout.CENTER);
+    
+    // Refresh
+    rightPanel.revalidate();
+    rightPanel.repaint();
+    }//GEN-LAST:event_btnAnaActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
-
+     
     private void TopBarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TopBarMousePressed
         // TODO add your handling code here:
         mouseDownCompCoords = evt.getPoint();
@@ -345,7 +353,7 @@ private Point mouseDownCompCoords = null;
         currCoords.y - mouseDownCompCoords.y);
     }//GEN-LAST:event_TopBarMouseDragged
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void buttonSindhuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSindhuActionPerformed
         rightPanel.removeAll();
     
     // Create JFrame tapi jangan show
@@ -361,9 +369,9 @@ private Point mouseDownCompCoords = null;
     // Refresh
     rightPanel.revalidate();
     rightPanel.repaint();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_buttonSindhuActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnCharisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCharisActionPerformed
     rightPanel.removeAll();
     
     // Create JFrame tapi jangan show
@@ -379,9 +387,9 @@ private Point mouseDownCompCoords = null;
     // Refresh
     rightPanel.revalidate();
     rightPanel.repaint();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnCharisActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnFadliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFadliActionPerformed
      rightPanel.removeAll();
     
     // Create JFrame tapi jangan show
@@ -397,56 +405,27 @@ private Point mouseDownCompCoords = null;
     // Refresh
     rightPanel.revalidate();
     rightPanel.repaint();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnFadliActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnAhmadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAhmadActionPerformed
      rightPanel.removeAll();
     
     // Create JFrame tapi jangan show
-    Fadli fadliFrame = new Fadli();
+    FrameAhmad frameAhmad = new FrameAhmad();
     
     // Get root panel dari JFrame
-    JPanel fadliContent = (JPanel) fadliFrame.getContentPane();
+    JPanel ahmadContent = (JPanel) frameAhmad.getContentPane();
     
     // Copy ke right panel
     rightPanel.setLayout(new BorderLayout());
-    rightPanel.add(fadliContent, BorderLayout.CENTER);
+    rightPanel.add(ahmadContent, BorderLayout.CENTER);
     
     // Refresh
     rightPanel.revalidate();
     rightPanel.repaint();
         
-    }//GEN-LAST:event_jButton5ActionPerformed
-private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
-    // Clear target panel
-    targetPanel.removeAll();
-    
-    // Set layout
-    targetPanel.setLayout(new BorderLayout());
-    
-    // Create wrapper panel
-    JPanel wrapperPanel = new JPanel(new BorderLayout());
-    wrapperPanel.setBackground(new Color(0x2B2B2B));
-    
-    // Get content dari JFrame
-    Container frameContent = frame.getContentPane();
-    
-    // Set ukuran frame (penting!)
-    frame.pack(); // atau frame.setSize(width, height)
-    
-    // Copy background
-    wrapperPanel.setBackground(frameContent.getBackground());
-    
-    // Copy semua components
-    while (frameContent.getComponentCount() > 0) {
-        Component comp = frameContent.getComponent(0);
-        frameContent.remove(comp);
-        wrapperPanel.add(comp, BorderLayout.CENTER);
-    }
-    
-    // Add wrapper ke target panel
-    targetPanel.add(wrapperPanel, BorderLayout.CENTER);
-}
+    }//GEN-LAST:event_btnAhmadActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -476,13 +455,13 @@ private void copyComponentsFromFrame(JFrame frame, JPanel targetPanel) {
     private javax.swing.JPanel ListAnggota;
     private javax.swing.JPanel TitleIdentitas;
     private javax.swing.JPanel TopBar;
+    private javax.swing.JButton btnAhmad;
+    private javax.swing.JButton btnAna;
+    private javax.swing.JButton btnCharis;
     private javax.swing.JButton btnClose;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton btnFadli;
+    private javax.swing.JButton btnFia;
+    private javax.swing.JButton buttonSindhu;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel rightPanel;
